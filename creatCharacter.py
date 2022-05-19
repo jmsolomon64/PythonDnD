@@ -1,5 +1,7 @@
 import myUserinterface
 
+characters = []
+
 class Character: #class made for the character this is a blue print. Just like classes in c#
     def __init__(self, name, className, lvl, race, stng, dex, cont, intl, wisd, char): #Self refers to the new object made from the class 
         self.name = name
@@ -54,6 +56,12 @@ def CreateCharacter():
         userInput.append(attribute)
 
     newCharacter = Character(userInput[0], userInput[1], userInput[2], userInput[3], userInput[4], userInput[5], userInput[6], userInput[7], userInput[8], userInput[9])
+
+    characters.append(newCharacter)
+
+    myUserinterface.Pause()
+
+
 
 def ViewCharacter():
     print()

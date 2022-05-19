@@ -1,6 +1,5 @@
 import imp
 import random
-import PythonDnD.creatCharacter as creatCharacter
 import myUserinterface
 import myConditionals
 #This file will act in the same way as my Program.cs file would
@@ -15,3 +14,4 @@ while isRunning:
     choice = input() #Gaining the users decision, need to have a way to deal with user inputing an invalid option
 
     myConditionals.MainMenu(choice)
+    
