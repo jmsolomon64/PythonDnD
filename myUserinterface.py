@@ -28,3 +28,9 @@ def PrintCharacter(i):
 
 def NotFound():
     print("Not found")
+
+def CharacterName():
+    print("Please enter the name of a character")
+
+def CharacterDeleted():
+    print("Character succesfully deleted.")

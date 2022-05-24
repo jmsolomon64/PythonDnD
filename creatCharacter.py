@@ -1,4 +1,5 @@
-import myUserinterface
+import myUserinterface as interface
+import creatCharacter as create
 
 characters = []
 
@@ -59,12 +60,20 @@ def CreateCharacter():
 
     characters.append(newCharacter)
 
-    myUserinterface.Pause()
+    interface.Pause()
 
 
 
-def ViewCharacter():
-    print()
+def DeleteCharacter():
+    interface.CharacterName()
+    name = input()
+    for i in create.characters: 
+        if (name.capitalize == i.name.capitalize):
+            create.Character.remove(i)
+        else: 
+            interface.NotFound()
+        interface.Pause()
+    interface.CharacterDeleted()
 
 
 

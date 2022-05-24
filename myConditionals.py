@@ -12,9 +12,9 @@ def MainMenu(choice): #will handle the first decision made when entering the mai
     elif choice == "4":
         return 4
     elif choice == "5":
-        return 5
+        creatCharacter.DeleteCharacter()
     elif choice == "6":
-        return 6
+        main.isRunning = False
     else:
         main.isRunning = False
 
